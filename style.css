@@ -45,7 +45,7 @@ padding: 0.5rem 1rem;
 border-radius: 8px;
 border: none;
 background: #ff4d00;
-color: white;
+color: rgb(102, 15, 15);
 font-weight: 600;
 cursor: pointer;
 transition: background 0.3s, transform 0.2s;
