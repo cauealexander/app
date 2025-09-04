@@ -1,47 +1,43 @@
-body {
-  background: #121212;
-  color: #EEE;
-}
+/* Reset e fonte */
+* { margin:0; padding:0; box-sizing:border-box; font-family:'Poppins', sans-serif;}
+body { background:#121212; color:#EEE; }
 
-header {
-  background: #1F1F1F;
-  color: #FFF;
-}
+/* Cabeçalho */
+header { display:flex; justify-content:space-between; align-items:center; padding:1rem 2rem; background:#1F1F1F; position:sticky; top:0; z-index:1000;}
+.logo { font-size:1.8rem; font-weight:700; color:#FFD700;}
+.menu a { margin:0 1rem; text-decoration:none; color:#FFF; font-weight:600; transition: color 0.3s;}
+.menu a:hover { color:#FF7300; }
+.user-actions .btn { margin-left:0.5rem; padding:0.5rem 1rem; border:none; border-radius:25px; font-weight:600; cursor:pointer; transition: transform 0.2s, background 0.3s;}
+.login { background:#333; color:#FFF;}
+.login:hover { background:#555; transform:scale(1.05);}
+.register { background:#FF4D00; color:#FFF;}
+.register:hover { background:#FF7300; transform:scale(1.05);}
+.google { display:flex; align-items:center; gap:8px; background:white; color:#333; border:1px solid #ddd; }
+.google:hover { background:#f5f5f5; transform:scale(1.05);}
+.google-icon { width:20px; height:20px;}
 
-.menu a {
-  color: #FFF;
-}
+/* Banner */
+.banner { text-align:center; padding:3rem 2rem; background:linear-gradient(135deg,#FF4D00,#FF7300);}
+.banner h1 { font-size:2.5rem; margin-bottom:1rem;}
+.banner p { font-size:1.2rem;}
 
-.menu a:hover {
-  color: #FF7300;
-}
+/* Partidas */
+.matches { padding:2rem; }
+.matches h2 { margin-bottom:1rem; border-left:5px solid #FF4D00; padding-left:0.5rem; color:#FFD700;}
+.match-card { background:#1E1E1E; border-radius:10px; padding:1rem; margin-bottom:1rem; display:flex; justify-content:space-between; align-items:center; box-shadow:0 4px 10px rgba(0,0,0,0.4); }
+.teams span { margin:0 0.3rem; font-weight:600; }
+.odds .odd { margin-left:0.5rem; padding:0.5rem 1rem; border-radius:8px; border:none; background:#FF4D00; color:#FFF; font-weight:600; cursor:pointer; transition: background 0.3s, transform 0.2s;}
+.odds .odd:hover { background:#FF7300; transform:scale(1.05);}
 
-.banner {
-  background: linear-gradient(135deg, #FF4D00, #FF7300);
-  color: #FFF;
-}
+/* Cassino */
+.casino-games { padding:2rem; }
+.casino-games h2 { margin-bottom:1rem; border-left:5px solid #FF4D00; padding-left:0.5rem; color:#FFD700; }
+.game-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(120px,1fr)); gap:1rem; }
+.game-card { background:#1E1E1E; border-radius:10px; padding:1rem; text-align:center; transition: transform 0.2s, box-shadow 0.2s; cursor:pointer;}
+.game-card:hover { transform:translateY(-5px); box-shadow:0 6px 15px rgba(255,77,0,0.4); }
+.game-card img { max-width:80px; margin-bottom:0.5rem; }
 
-.matches h2, .casino-games h2 {
-  border-left: 5px solid #FF4D00;
-  color: #FFD700;
-}
+/* Rodapé */
+footer { text-align:center; padding:1rem; background:#1A1A1A; color:#AAA; font-size:0.9rem;}
 
-.match-card, .game-card {
-  background: #1E1E1E;
-  color: #EEE;
-}
-
-.buy-btn, .odds .odd, .login, .register {
-  background: #FF4D00;
-  color: #FFF;
-}
-
-.buy-btn:hover, .odds .odd:hover, .login:hover, .register:hover {
-  background: #FF7300;
-}
-
-footer {
-  background: #1A1A1A;
-  color: #AAA;
-}
 

@@ -1,86 +1,97 @@
-<!-- index.html -->
-<main>
-<section class="matches" id="futebol">
-<h2>Futebol - Ao Vivo</h2>
-<div class="match-card">
-<div class="teams">
-<span>Flamengo</span>
-<span>X</span>
-<span>Palmeiras</span>
-</div>
-<div class="odds">
-<button class="odd">1.85</button>
-<button class="odd">3.20</button>
-<button class="odd">2.10</button>
-</div>
-</div>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BetMaster - Casas de Apostas</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="logo">BetMaster</div>
+    <nav class="menu">
+      <a href="#futebol">Futebol</a>
+      <a href="#basquete">Basquete</a>
+      <a href="#tenis">Tênis</a>
+      <a href="#esports">eSports</a>
+    </nav>
+    <div class="user-actions">
+      <button class="btn login">Login</button>
+      <button class="btn register">Registrar</button>
+      <button class="btn google">
+        <img src="https://www.svgrepo.com/show/355037/google.svg" alt="Google" class="google-icon">
+        Entrar com Google
+      </button>
+    </div>
+  </header>
 
+  <section class="banner">
+    <h1>Aposte ao Vivo</h1>
+    <p>As melhores cotações em tempo real</p>
+  </section>
 
-<div class="match-card">
-<div class="teams">
-<span>Barcelona</span>
-<span>X</span>
-<span>Real Madrid</span>
-</div>
-<div class="odds">
-<button class="odd">2.00</button>
-<button class="odd">3.50</button>
-<button class="odd">2.40</button>
-</div>
-</div>
-</section>
+  <main>
+    <!-- Apostas ao Vivo -->
+    <section class="matches" id="futebol">
+      <h2>Futebol - Ao Vivo</h2>
+      <div class="match-card">
+        <div class="teams"><span>Flamengo</span> <span>X</span> <span>Palmeiras</span></div>
+        <div class="odds">
+          <button class="odd">1.85</button>
+          <button class="odd">3.20</button>
+          <button class="odd">2.10</button>
+        </div>
+      </div>
+      <div class="match-card">
+        <div class="teams"><span>Barcelona</span> <span>X</span> <span>Real Madrid</span></div>
+        <div class="odds">
+          <button class="odd">2.00</button>
+          <button class="odd">3.50</button>
+          <button class="odd">2.40</button>
+        </div>
+      </div>
+    </section>
 
+    <section class="matches" id="basquete">
+      <h2>Basquete - Ao Vivo</h2>
+      <div class="match-card">
+        <div class="teams"><span>Lakers</span> <span>X</span> <span>Warriors</span></div>
+        <div class="odds">
+          <button class="odd">1.70</button>
+          <button class="odd">2.90</button>
+          <button class="odd">2.20</button>
+        </div>
+      </div>
+    </section>
 
-<section class="matches" id="basquete">
-<h2>Basquete - Ao Vivo</h2>
-<div class="match-card">
-<div class="teams">
-<span>Lakers</span>
-<span>X</span>
-<span>Warriors</span>
-</div>
-<div class="odds">
-<button class="odd">1.70</button>
-<button class="odd">2.90</button>
-<button class="odd">2.20</button>
-</div>
-</div>
-</section>
-</main>
+    <!-- Cassino -->
+    <section class="casino-games">
+      <h2>Jogos de Cassino</h2>
+      <div class="game-grid">
+        <div class="game-card">
+          <img src="https://via.placeholder.com/100?text=Tigrinho" alt="Tigrinho">
+          <p>Tigrinho</p>
+        </div>
+        <div class="game-card">
+          <img src="https://via.placeholder.com/100?text=Roleta" alt="Roleta">
+          <p>Roleta</p>
+        </div>
+        <div class="game-card">
+          <img src="https://via.placeholder.com/100?text=Blackjack" alt="Blackjack">
+          <p>Blackjack</p>
+        </div>
+        <div class="game-card">
+          <img src="https://via.placeholder.com/100?text=Poker" alt="Poker">
+          <p>Poker</p>
+        </div>
+      </div>
+    </section>
+  </main>
 
-
-<footer>
-<p>© 2025 BetMaster - Este é um protótipo fictício, sem funções reais de apostas.</p>
-</footer>
+  <footer>
+    <p>© 2025 BetMaster - Protótipo fictício, sem apostas reais.</p>
+  </footer>
 </body>
 </html>
-<!-- Dentro do <header> -->
-<div class="user-actions">
-  <button class="btn login">Login</button>
-  <button class="btn register">Registrar</button>
-  <button class="btn google">
-    <img src="https://www.svgrepo.com/show/355037/google.svg" alt="Google" class="google-icon">
-    Entrar com Google
-  </button>
-</div>
-<section class="casino-games">
-  <h2>Jogos de Cassino</h2>
-  <div class="game-grid">
-    <div class="game-card">
-      <img src="https://via.placeholder.com/100?text=Tigrinho" alt="Tigrinho">
-      <p>Tigrinho</p>
-    </div>
-    <div class="game-card">
-      <img src="https://via.placeholder.com/100?text=Roleta" alt="Roleta">
-      <p>Roleta</p>
-    </div>
-    <div class="game-card">
-      <img src="https://via.placeholder.com/100?text=Blackjack" alt="Blackjack">
-      <p>Blackjack</p>
-    </div>
-    <div class="game-card">
-      <img src="https://via.placeholder.com/100?text=Poker" alt="Poker">
-      <p>Poker</p>
-    </div>
-  </div>
-</section>
+
