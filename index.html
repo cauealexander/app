@@ -1,91 +1,62 @@
-/* ======= MAPA DO JOGO ======= */
-body {
-  margin: 0;
-  background: #000;
-  font-family: sans-serif;
-}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mini Shopee</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
-#game {
-  width: 640px;
-  height: 640px;
-  display: grid;
-  grid-template-columns: repeat(20, 32px);
-  grid-template-rows: repeat(20, 32px);
-  gap: 0;
-  background: #5a9e42; /* grama */
-  position: relative;
-  border: 4px solid #333;
-  margin: 20px auto;
-}
+  <!-- Topo: logo + barra de busca -->
+  <header>
+    <div class="container">
+      <h1 class="logo">MiniShopee</h1>
+      <input type="text" placeholder="Buscar produtos..." class="search" />
+    </div>
+  </header>
 
-/* ======= PERSONAGEM ======= */
-.player {
-  width: 28px;
-  height: 28px;
-  background: url('https://i.imgur.com/w1URRgh.png'); /* Exemplo de sprite */
-  background-size: cover;
-  border: 2px solid #fff;
-  border-radius: 4px;
-  position: absolute;
-  top: 100px;
-  left: 100px;
-  z-index: 10;
-}
+  <!-- Menu de categorias -->
+  <nav class="categories">
+    <button>Moda</button>
+    <button>Eletrônicos</button>
+    <button>Casa</button>
+    <button>Beleza</button>
+    <button>Mercado</button>
+    <button>Brinquedos</button>
+  </nav>
 
-/* ======= INIMIGO ======= */
-.enemy {
-  width: 28px;
-  height: 28px;
-  background: red;
-  border: 2px solid #000;
-  border-radius: 4px;
-  position: absolute;
-  top: 300px;
-  left: 400px;
-  z-index: 10;
-}
+  <!-- Grid de produtos -->
+  <main class="products">
+    <div class="product-card">
+      <img src="https://via.placeholder.com/150" alt="Produto 1">
+      <h3>Smartphone Android</h3>
+      <p>R$ 999,00</p>
+    </div>
 
-/* ======= ARMA DROPPADA ======= */
-.weapon {
-  width: 24px;
-  height: 10px;
-  background: #555;
-  position: absolute;
-  top: 200px;
-  left: 200px;
-  border-radius: 2px;
-  box-shadow: 0 0 4px #000;
-}
+    <div class="product-card">
+      <img src="https://via.placeholder.com/150" alt="Produto 2">
+      <h3>Camisa Estilosa</h3>
+      <p>R$ 49,90</p>
+    </div>
 
-/* ======= ZONA SEGURA (SAFE ZONE) ======= */
-.safe-zone {
-  width: 400px;
-  height: 400px;
-  border: 3px dashed #0f0;
-  border-radius: 50%;
-  position: absolute;
-  top: 120px;
-  left: 120px;
-  z-index: 1;
-}
+    <div class="product-card">
+      <img src="https://via.placeholder.com/150" alt="Produto 3">
+      <h3>Fone Bluetooth</h3>
+      <p>R$ 89,90</p>
+    </div>
 
-/* ======= GÁS FECHANDO ======= */
-.gas {
-  width: 100%;
-  height: 100%;
-  background: rgba(100, 0, 0, 0.3);
-  position: absolute;
-  top: 0;
-  left: 0;
-  animation: fecharGas 20s linear forwards;
-  z-index: 0;
-}
+    <div class="product-card">
+      <img src="https://via.placeholder.com/150" alt="Produto 4">
+      <h3>Liquidificador Turbo</h3>
+      <p>R$ 120,00</p>
+    </div>
+  </main>
 
-@keyframes fecharGas {
-  0% {
-    clip-path: circle(100% at center);
-  }
-  100% {
-    clip-path: circle(20% at center);
-  }
-}
+  <!-- Rodapé -->
+  <footer>
+    <p>&copy; 2025 MiniShopee - Todos os direitos reservados</p>
+  </footer>
+
+</body>
+</html>
