@@ -66,3 +66,49 @@ color: #8f0c0c;
 margin-top: 2rem;
 font-size: 0.9rem;
 }
+body {
+  background: #121212;
+  color: #EEE;
+}
+
+header {
+  background: #1F1F1F;
+  color: #FFF;
+}
+
+.menu a {
+  color: #FFF;
+}
+
+.menu a:hover {
+  color: #FF7300;
+}
+
+.banner {
+  background: linear-gradient(135deg, #FF4D00, #FF7300);
+  color: #FFF;
+}
+
+.matches h2, .casino-games h2 {
+  border-left: 5px solid #FF4D00;
+  color: #FFD700;
+}
+
+.match-card, .game-card {
+  background: #1E1E1E;
+  color: #EEE;
+}
+
+.buy-btn, .odds .odd, .login, .register {
+  background: #FF4D00;
+  color: #FFF;
+}
+
+.buy-btn:hover, .odds .odd:hover, .login:hover, .register:hover {
+  background: #FF7300;
+}
+
+footer {
+  background: #1A1A1A;
+  color: #AAA;
+}
