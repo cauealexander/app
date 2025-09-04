@@ -95,3 +95,40 @@
 </body>
 </html>
 
+<!-- Dentro de <div class="user-actions"> -->
+<button id="google-login" class="btn google">
+  <img src="https://www.svgrepo.com/show/355037/google.svg" alt="Google" class="google-icon">
+  Entrar com Google
+</button>
+<!-- Adicione antes do </body> -->
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth.js"></script>
+<script>
+  // Configuração do Firebase
+  const firebaseConfig = {
+    apiKey: "SUA_API_KEY",
+    authDomain: "SEU_AUTH_DOMAIN",
+    projectId: "SEU_PROJECT_ID",
+    storageBucket: "SEU_STORAGE_BUCKET",
+    messagingSenderId: "SEU_MESSAGING_SENDER_ID",
+    appId: "SEU_APP_ID"
+  };
+
+  // Inicializa Firebase
+  const app = firebase.initializeApp(firebaseConfig);
+  const auth = firebase.auth();
+
+  // Login com Google
+  const googleButton = document.getElementById('google-login');
+  googleButton.addEventListener('click', () => {
+    const provider = new firebase.auth.GoogleAuthProvider();
+    auth.signInWithPopup(provider)
+      .then((result) => {
+        alert(`Bem-vindo, ${result.user.displayName}!`);
+      })
+      .catch((error) => {
+        console.error(error);
+        alert('Erro ao fazer login');
+      });
+  });
+</script>
