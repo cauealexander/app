@@ -1,71 +1,59 @@
 /* style.css */
-}
-
-
-main {
-padding: 2rem;
-}
-
-
-main h2 {
-font-size: 2rem;
-margin-bottom: 1.5rem;
-text-align: center;
-}
-
-
-.product-grid {
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-gap: 1.5rem;
-}
-
-
-.product-card {
-background: white;
-border-radius: 15px;
-padding: 1rem;
-text-align: center;
-box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-transition: transform 0.2s, box-shadow 0.2s;
-}
-
-
-.product-card:hover {
-transform: translateY(-5px);
-box-shadow: 0 6px 15px rgba(0,0,0,0.2);
-}
-
-
-.product-card img {
-max-width: 100%;
-border-radius: 10px;
+font-size: 2.5rem;
 margin-bottom: 1rem;
 }
 
 
-.price {
+.banner p {
 font-size: 1.2rem;
-font-weight: 600;
-color: #ff5722;
-margin: 0.5rem 0;
 }
 
 
-.buy-btn {
-padding: 0.5rem 1rem;
-background: #ff5722;
-color: white;
-border: none;
-border-radius: 25px;
-cursor: pointer;
+.matches {
+padding: 2rem;
+}
+
+
+.matches h2 {
+margin-bottom: 1rem;
+border-left: 5px solid #ff4d00;
+padding-left: 0.5rem;
+}
+
+
+.match-card {
+background: #1e1e1e;
+border-radius: 10px;
+padding: 1rem;
+margin-bottom: 1rem;
+display: flex;
+justify-content: space-between;
+align-items: center;
+box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
+
+
+.teams span {
+margin: 0 0.3rem;
 font-weight: 600;
+}
+
+
+.odds .odd {
+margin-left: 0.5rem;
+padding: 0.5rem 1rem;
+border-radius: 8px;
+border: none;
+background: #ff4d00;
+color: white;
+font-weight: 600;
+cursor: pointer;
 transition: background 0.3s, transform 0.2s;
 }
 
 
-.buy-btn:hover {
-background: #e64a19;
+.odds .odd:hover {
+background: #ff7043;
 transform: scale(1.05);
 }
 
@@ -73,7 +61,8 @@ transform: scale(1.05);
 footer {
 text-align: center;
 padding: 1rem;
-background: #333;
-color: white;
+background: #1a1a1a;
+color: #bbb;
 margin-top: 2rem;
+font-size: 0.9rem;
 }
