@@ -1,0 +1,20 @@
+/* personagem.css */
+.personagem {
+  width: 60px;
+  height: 100px;
+  background: linear-gradient(to bottom, #555, #333);
+  border: 2px solid #000;
+  border-radius: 10px;
+  position: relative;
+}
+
+.personagem::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background: #fc0;
+  border-radius: 50%;
+  position: absolute;
+  top: -25px;
+  left: 20px;
+}
