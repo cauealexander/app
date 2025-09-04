@@ -2,60 +2,134 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Mini Shopee</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/2331/2331970.png" type="image/x-icon" />
 </head>
 <body>
 
-  <!-- Topo: logo + barra de busca -->
-  <header>
-    <div class="container">
-      <h1 class="logo">MiniShopee</h1>
-      <input type="text" placeholder="Buscar produtos..." class="search" />
+  <!-- 🔝 Header -->
+  <header class="main-header">
+    <div class="header-top">
+      <div class="logo">MiniShopee</div>
+      <div class="search-bar">
+        <input type="text" placeholder="Buscar por produtos, marcas e muito mais..." />
+        <button>🔍</button>
+      </div>
+      <div class="icons">
+        <a href="#">❤️</a>
+        <a href="#">🛒</a>
+        <a href="#">👤</a>
+      </div>
     </div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="#">Ofertas do Dia</a></li>
+        <li><a href="#">Moda</a></li>
+        <li><a href="#">Eletrônicos</a></li>
+        <li><a href="#">Mercado</a></li>
+        <li><a href="#">Casa</a></li>
+        <li><a href="#">Beleza</a></li>
+        <li><a href="#">Brinquedos</a></li>
+        <li><a href="#">Mais</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <!-- Menu de categorias -->
-  <nav class="categories">
-    <button>Moda</button>
-    <button>Eletrônicos</button>
-    <button>Casa</button>
-    <button>Beleza</button>
-    <button>Mercado</button>
-    <button>Brinquedos</button>
-  </nav>
+  <!-- 📢 Banner promocional -->
+  <section class="banner">
+    <img src="https://via.placeholder.com/1200x300/FF5722/ffffff?text=Promoção+Relâmpago+Hoje" alt="Banner de Promoção" />
+  </section>
 
-  <!-- Grid de produtos -->
-  <main class="products">
-    <div class="product-card">
-      <img src="https://via.placeholder.com/150" alt="Produto 1">
-      <h3>Smartphone Android</h3>
-      <p>R$ 999,00</p>
-    </div>
+  <!-- 🛍️ Seção de Produtos -->
+  <main class="products-section">
+    <h2>Recomendações para você</h2>
+    <div class="product-grid">
 
-    <div class="product-card">
-      <img src="https://via.placeholder.com/150" alt="Produto 2">
-      <h3>Camisa Estilosa</h3>
-      <p>R$ 49,90</p>
-    </div>
+      <div class="product-card">
+        <img src="https://via.placeholder.com/200" alt="Produto 1" />
+        <h3>Smartphone Xiaomi</h3>
+        <p class="price">R$ 1.299,00</p>
+        <p class="frete">Frete Grátis</p>
+      </div>
 
-    <div class="product-card">
-      <img src="https://via.placeholder.com/150" alt="Produto 3">
-      <h3>Fone Bluetooth</h3>
-      <p>R$ 89,90</p>
-    </div>
+      <div class="product-card">
+        <img src="https://via.placeholder.com/200" alt="Produto 2" />
+        <h3>Fone de Ouvido Bluetooth</h3>
+        <p class="price">R$ 89,90</p>
+        <p class="frete">Frete Grátis</p>
+      </div>
 
-    <div class="product-card">
-      <img src="https://via.placeholder.com/150" alt="Produto 4">
-      <h3>Liquidificador Turbo</h3>
-      <p>R$ 120,00</p>
+      <div class="product-card">
+        <img src="https://via.placeholder.com/200" alt="Produto 3" />
+        <h3>Relógio Smartwatch</h3>
+        <p class="price">R$ 199,00</p>
+        <p class="frete">Frete Grátis</p>
+      </div>
+
+      <div class="product-card">
+        <img src="https://via.placeholder.com/200" alt="Produto 4" />
+        <h3>Camiseta Estampada</h3>
+        <p class="price">R$ 39,90</p>
+        <p class="frete">Frete Grátis</p>
+      </div>
+
+      <div class="product-card">
+        <img src="https://via.placeholder.com/200" alt="Produto 5" />
+        <h3>Liquidificador Turbo</h3>
+        <p class="price">R$ 149,90</p>
+        <p class="frete">Frete Grátis</p>
+      </div>
+
+      <div class="product-card">
+        <img src="https://via.placeholder.com/200" alt="Produto 6" />
+        <h3>Kit Maquiagem Profissional</h3>
+        <p class="price">R$ 89,00</p>
+        <p class="frete">Frete Grátis</p>
+      </div>
+
     </div>
   </main>
 
-  <!-- Rodapé -->
+  <!-- 📩 Newsletter -->
+  <section class="newsletter">
+    <h3>Receba ofertas no seu e-mail!</h3>
+    <form>
+      <input type="email" placeholder="Digite seu e-mail" required />
+      <button type="submit">Inscrever</button>
+    </form>
+  </section>
+
+  <!-- 📌 Rodapé -->
   <footer>
-    <p>&copy; 2025 MiniShopee - Todos os direitos reservados</p>
+    <div class="footer-links">
+      <div>
+        <h4>Atendimento</h4>
+        <ul>
+          <li><a href="#">Ajuda</a></li>
+          <li><a href="#">Fale conosco</a></li>
+          <li><a href="#">Devoluções</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Sobre</h4>
+        <ul>
+          <li><a href="#">Quem somos</a></li>
+          <li><a href="#">Trabalhe conosco</a></li>
+          <li><a href="#">Termos de uso</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Redes Sociais</h4>
+        <ul>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">YouTube</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer-copy">&copy; 2025 MiniShopee. Todos os direitos reservados.</p>
   </footer>
 
 </body>
