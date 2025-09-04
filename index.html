@@ -1,135 +1,139 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Mini Shopee</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SuperShopee</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/2331/2331970.png" type="image/x-icon" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" />
 </head>
 <body>
 
   <!-- 🔝 Header -->
-  <header class="main-header">
-    <div class="header-top">
-      <div class="logo">MiniShopee</div>
-      <div class="search-bar">
-        <input type="text" placeholder="Buscar por produtos, marcas e muito mais..." />
+  <header class="header">
+    <div class="container header-top">
+      <div class="logo">SuperShopee</div>
+      <div class="search-box">
+        <input type="text" placeholder="Buscar produtos, marcas e mais..." />
         <button>🔍</button>
       </div>
-      <div class="icons">
-        <a href="#">❤️</a>
-        <a href="#">🛒</a>
-        <a href="#">👤</a>
+      <div class="user-icons">
+        <a href="#">👤 Login</a>
+        <a href="#">🛒 Carrinho</a>
       </div>
     </div>
-    <nav class="main-nav">
+    <nav class="nav-bar">
       <ul>
-        <li><a href="#">Ofertas do Dia</a></li>
-        <li><a href="#">Moda</a></li>
-        <li><a href="#">Eletrônicos</a></li>
-        <li><a href="#">Mercado</a></li>
-        <li><a href="#">Casa</a></li>
-        <li><a href="#">Beleza</a></li>
-        <li><a href="#">Brinquedos</a></li>
-        <li><a href="#">Mais</a></li>
+        <li><a href="#">Home</a></li>
+        <li class="has-submenu">
+          <a href="#">Categorias</a>
+          <ul class="submenu">
+            <li><a href="#">Moda</a></li>
+            <li><a href="#">Tecnologia</a></li>
+            <li><a href="#">Casa</a></li>
+            <li><a href="#">Games</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Ofertas</a></li>
+        <li><a href="#">Frete Grátis</a></li>
+        <li><a href="#">Contato</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- 📢 Banner promocional -->
-  <section class="banner">
-    <img src="https://via.placeholder.com/1200x300/FF5722/ffffff?text=Promoção+Relâmpago+Hoje" alt="Banner de Promoção" />
+  <!-- 🎞️ Banner Rotativo (CSS puro) -->
+  <section class="carousel">
+    <div class="slides">
+      <div class="slide active"><img src="https://via.placeholder.com/1200x300/FF5722/ffffff?text=Promo+1" /></div>
+      <div class="slide"><img src="https://via.placeholder.com/1200x300/4CAF50/ffffff?text=Promo+2" /></div>
+      <div class="slide"><img src="https://via.placeholder.com/1200x300/2196F3/ffffff?text=Promo+3" /></div>
+    </div>
   </section>
 
-  <!-- 🛍️ Seção de Produtos -->
-  <main class="products-section">
+  <!-- 🛒 Produtos em destaque -->
+  <main class="product-section container">
     <h2>Recomendações para você</h2>
     <div class="product-grid">
 
       <div class="product-card">
-        <img src="https://via.placeholder.com/200" alt="Produto 1" />
-        <h3>Smartphone Xiaomi</h3>
-        <p class="price">R$ 1.299,00</p>
-        <p class="frete">Frete Grátis</p>
-      </div>
-
-      <div class="product-card">
-        <img src="https://via.placeholder.com/200" alt="Produto 2" />
+        <img src="https://via.placeholder.com/200" alt="Produto 1">
         <h3>Fone de Ouvido Bluetooth</h3>
         <p class="price">R$ 89,90</p>
-        <p class="frete">Frete Grátis</p>
+        <button>Comprar</button>
       </div>
 
       <div class="product-card">
-        <img src="https://via.placeholder.com/200" alt="Produto 3" />
-        <h3>Relógio Smartwatch</h3>
-        <p class="price">R$ 199,00</p>
-        <p class="frete">Frete Grátis</p>
+        <img src="https://via.placeholder.com/200" alt="Produto 2">
+        <h3>Smartwatch Pro Max</h3>
+        <p class="price">R$ 199,99</p>
+        <button>Comprar</button>
       </div>
 
       <div class="product-card">
-        <img src="https://via.placeholder.com/200" alt="Produto 4" />
-        <h3>Camiseta Estampada</h3>
-        <p class="price">R$ 39,90</p>
-        <p class="frete">Frete Grátis</p>
+        <img src="https://via.placeholder.com/200" alt="Produto 3">
+        <h3>Echo Dot Alexa</h3>
+        <p class="price">R$ 349,90</p>
+        <button>Comprar</button>
       </div>
 
       <div class="product-card">
-        <img src="https://via.placeholder.com/200" alt="Produto 5" />
-        <h3>Liquidificador Turbo</h3>
-        <p class="price">R$ 149,90</p>
-        <p class="frete">Frete Grátis</p>
-      </div>
-
-      <div class="product-card">
-        <img src="https://via.placeholder.com/200" alt="Produto 6" />
-        <h3>Kit Maquiagem Profissional</h3>
-        <p class="price">R$ 89,00</p>
-        <p class="frete">Frete Grátis</p>
+        <img src="https://via.placeholder.com/200" alt="Produto 4">
+        <h3>Kit Teclado + Mouse Gamer</h3>
+        <p class="price">R$ 129,00</p>
+        <button>Comprar</button>
       </div>
 
     </div>
   </main>
 
-  <!-- 📩 Newsletter -->
+  <!-- ✉️ Newsletter -->
   <section class="newsletter">
-    <h3>Receba ofertas no seu e-mail!</h3>
-    <form>
-      <input type="email" placeholder="Digite seu e-mail" required />
-      <button type="submit">Inscrever</button>
-    </form>
+    <div class="container">
+      <h3>Receba ofertas exclusivas no seu e-mail</h3>
+      <form>
+        <input type="email" placeholder="Digite seu e-mail" required>
+        <button type="submit">Inscrever-se</button>
+      </form>
+    </div>
   </section>
 
-  <!-- 📌 Rodapé -->
-  <footer>
-    <div class="footer-links">
+  <!-- 📎 Rodapé -->
+  <footer class="footer">
+    <div class="container footer-columns">
       <div>
-        <h4>Atendimento</h4>
+        <h4>SuperShopee</h4>
+        <p>As melhores ofertas, todos os dias.</p>
+      </div>
+      <div>
+        <h4>Ajuda</h4>
         <ul>
-          <li><a href="#">Ajuda</a></li>
+          <li><a href="#">Central de atendimento</a></li>
           <li><a href="#">Fale conosco</a></li>
-          <li><a href="#">Devoluções</a></li>
+          <li><a href="#">Pedidos</a></li>
         </ul>
       </div>
       <div>
-        <h4>Sobre</h4>
+        <h4>Institucional</h4>
         <ul>
           <li><a href="#">Quem somos</a></li>
           <li><a href="#">Trabalhe conosco</a></li>
-          <li><a href="#">Termos de uso</a></li>
+          <li><a href="#">Política de privacidade</a></li>
         </ul>
       </div>
       <div>
-        <h4>Redes Sociais</h4>
+        <h4>Redes sociais</h4>
         <ul>
           <li><a href="#">Instagram</a></li>
           <li><a href="#">Facebook</a></li>
-          <li><a href="#">YouTube</a></li>
+          <li><a href="#">TikTok</a></li>
         </ul>
       </div>
     </div>
-    <p class="footer-copy">&copy; 2025 MiniShopee. Todos os direitos reservados.</p>
+    <div class="footer-bottom">
+      <p>&copy; 2025 SuperShopee. Todos os direitos reservados.</p>
+    </div>
   </footer>
 
 </body>
