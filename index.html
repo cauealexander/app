@@ -1,140 +1,42 @@
+<!-- index.html -->
+<p>Ofertas que você nunca viu antes!</p>
+<a href="#produtos" class="btn">Ver ofertas</a>
+</section>
 
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SuperShopee</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" />
-</head>
-<body>
 
-  <!-- 🔝 Header -->
-  <header class="header">
-    <div class="container header-top">
-      <div class="logo">SuperShopee</div>
-      <div class="search-box">
-        <input type="text" placeholder="Buscar produtos, marcas e mais..." />
-        <button>🔍</button>
-      </div>
-      <div class="user-icons">
-        <a href="#">👤 Login</a>
-        <a href="#">🛒 Carrinho</a>
-      </div>
-    </div>
-    <nav class="nav-bar">
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li class="has-submenu">
-          <a href="#">Categorias</a>
-          <ul class="submenu">
-            <li><a href="#">Moda</a></li>
-            <li><a href="#">Tecnologia</a></li>
-            <li><a href="#">Casa</a></li>
-            <li><a href="#">Games</a></li>
-          </ul>
-        </li>
-        <li><a href="#">Ofertas</a></li>
-        <li><a href="#">Frete Grátis</a></li>
-        <li><a href="#">Contato</a></li>
-      </ul>
-    </nav>
-  </header>
+<main>
+<h2 id="produtos">Produtos em Destaque</h2>
+<div class="product-grid">
+<div class="product-card">
+<img src="https://via.placeholder.com/200" alt="Produto 1">
+<h3>Fone de Ouvido</h3>
+<p class="price">R$ 99,90</p>
+<button class="buy-btn">Comprar</button>
+</div>
+<div class="product-card">
+<img src="https://via.placeholder.com/200" alt="Produto 2">
+<h3>Smartwatch</h3>
+<p class="price">R$ 199,90</p>
+<button class="buy-btn">Comprar</button>
+</div>
+<div class="product-card">
+<img src="https://via.placeholder.com/200" alt="Produto 3">
+<h3>Caixa de Som</h3>
+<p class="price">R$ 149,90</p>
+<button class="buy-btn">Comprar</button>
+</div>
+<div class="product-card">
+<img src="https://via.placeholder.com/200" alt="Produto 4">
+<h3>Mouse Gamer</h3>
+<p class="price">R$ 79,90</p>
+<button class="buy-btn">Comprar</button>
+</div>
+</div>
+</main>
 
-  <!-- 🎞️ Banner Rotativo (CSS puro) -->
-  <section class="carousel">
-    <div class="slides">
-      <div class="slide active"><img src="https://via.placeholder.com/1200x300/FF5722/ffffff?text=Promo+1" /></div>
-      <div class="slide"><img src="https://via.placeholder.com/1200x300/4CAF50/ffffff?text=Promo+2" /></div>
-      <div class="slide"><img src="https://via.placeholder.com/1200x300/2196F3/ffffff?text=Promo+3" /></div>
-    </div>
-  </section>
 
-  <!-- 🛒 Produtos em destaque -->
-  <main class="product-section container">
-    <h2>Recomendações para você</h2>
-    <div class="product-grid">
-
-      <div class="product-card">
-        <img src="https://via.placeholder.com/200" alt="Produto 1">
-        <h3>Fone de Ouvido Bluetooth</h3>
-        <p class="price">R$ 89,90</p>
-        <button>Comprar</button>
-      </div>
-
-      <div class="product-card">
-        <img src="https://via.placeholder.com/200" alt="Produto 2">
-        <h3>Smartwatch Pro Max</h3>
-        <p class="price">R$ 199,99</p>
-        <button>Comprar</button>
-      </div>
-
-      <div class="product-card">
-        <img src="https://via.placeholder.com/200" alt="Produto 3">
-        <h3>Echo Dot Alexa</h3>
-        <p class="price">R$ 349,90</p>
-        <button>Comprar</button>
-      </div>
-
-      <div class="product-card">
-        <img src="https://via.placeholder.com/200" alt="Produto 4">
-        <h3>Kit Teclado + Mouse Gamer</h3>
-        <p class="price">R$ 129,00</p>
-        <button>Comprar</button>
-      </div>
-
-    </div>
-  </main>
-
-  <!-- ✉️ Newsletter -->
-  <section class="newsletter">
-    <div class="container">
-      <h3>Receba ofertas exclusivas no seu e-mail</h3>
-      <form>
-        <input type="email" placeholder="Digite seu e-mail" required>
-        <button type="submit">Inscrever-se</button>
-      </form>
-    </div>
-  </section>
-
-  <!-- 📎 Rodapé -->
-  <footer class="footer">
-    <div class="container footer-columns">
-      <div>
-        <h4>SuperShopee</h4>
-        <p>As melhores ofertas, todos os dias.</p>
-      </div>
-      <div>
-        <h4>Ajuda</h4>
-        <ul>
-          <li><a href="#">Central de atendimento</a></li>
-          <li><a href="#">Fale conosco</a></li>
-          <li><a href="#">Pedidos</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Institucional</h4>
-        <ul>
-          <li><a href="#">Quem somos</a></li>
-          <li><a href="#">Trabalhe conosco</a></li>
-          <li><a href="#">Política de privacidade</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Redes sociais</h4>
-        <ul>
-          <li><a href="#">Instagram</a></li>
-          <li><a href="#">Facebook</a></li>
-          <li><a href="#">TikTok</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>&copy; 2025 SuperShopee. Todos os direitos reservados.</p>
-    </div>
-  </footer>
-
+<footer>
+<p>© 2025 ShopEase - Todos os direitos reservados</p>
+</footer>
 </body>
 </html>
