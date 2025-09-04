@@ -39,5 +39,46 @@ header { display:flex; justify-content:space-between; align-items:center; paddin
 
 /* Rodapé */
 footer { text-align:center; padding:1rem; background:#1A1A1A; color:#AAA; font-size:0.9rem;}
+/* Sidebar */
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 2000;
+  top: 0;
+  left: 0;
+  background-color: #1E1E1E;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+.sidebar a {
+  padding: 10px 30px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #FFF;
+  display: block;
+  transition: 0.3s;
+}
+.sidebar a:hover { color: #FF7300; }
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 2rem;
+  background:none;
+  border:none;
+  color:white;
+  cursor:pointer;
+}
+.menu-toggle {
+  font-size:2rem;
+  cursor:pointer;
+  color:#FFF;
+  position:fixed;
+  top:15px;
+  left:15px;
+  z-index:3000;
+}
 
 
